@@ -17,7 +17,7 @@ export const EXPERIENCES = [
   },
   {
     year: "2023 - 2024",
-    role: "CHAIRMAN",
+    role: "Mobile and Web Development Instructor",
     company: "SYNTAX COMMUNITY",
     description: `Teaching programming to community members and managing the SYNTAX COMMUNITY website with Laravel, React and Tailwindcss technology.`,
     technologies: ["LARAVEL", "REACTJS", "FLUTTER", "MYSQL"],

@@ -30,63 +30,81 @@ function Tech() {
             initial="initial"
             animate="animate" 
              className="rounded-2xl border-4 border-neutral-800 p-4">
-                <SiFlutter className="text-7xl text-cyan-400" title="Flutter"/>
+                <a href="https://flutter.dev/" target="_blank">
+                    <SiFlutter className="text-7xl text-cyan-400"/>
+                </a>
             </motion.div>
             <motion.div
             variants={icon(3)}
             initial="initial"
             animate="animate" 
              className="rounded-2xl border-4 border-neutral-800 p-4">
-                <SiLaravel className="text-7xl text-red-400" title="Laravel"/>
+                <a href="https://laravel.com/" target="_blank">
+                    <SiLaravel className="text-7xl text-red-400" title="Laravel"/>
+                </a>
             </motion.div>
             <motion.div
             variants={icon(3.5)}
             initial="initial"
             animate="animate"  
             className="rounded-2xl border-4 border-neutral-800 p-4">
-                <SiReact className="text-7xl text-cyan-400" title="ReactJS"/>
+                <a href="https://react.dev/" target="_blank" rel="noopener noreferrer">
+                    <SiReact className="text-7xl text-cyan-400" title="ReactJS"/>
+                </a>
             </motion.div>
             <motion.div
             variants={icon(4)}
             initial="initial"
             animate="animate" 
              className="rounded-2xl border-4 border-neutral-800 p-4">
-                <SiMongodb className="text-7xl text-green-400" title="MongoDB"/>
+                <a href="https://www.mongodb.com/" target="_blank" rel="noopener noreferrer">
+                    <SiMongodb className="text-7xl text-green-400" title="MongoDB"/>
+                </a>
             </motion.div>
             <motion.div
             variants={icon(4.5)}
             initial="initial"
             animate="animate"  
             className="rounded-2xl border-4 border-neutral-800 p-4">
-                <SiDotnet className="text-7xl text-purple-400" title=".NET"/>
+                <a href="https://dotnet.microsoft.com/" target="_blank" rel="noopener noreferrer">
+                    <SiDotnet className="text-7xl text-purple-400" title=".NET"/>
+                </a>
             </motion.div>
             <motion.div
             variants={icon(5)}
             initial="initial"
             animate="animate"  
             className="rounded-2xl border-4 border-neutral-800 p-4">
-                <SiTailwindcss className="text-7xl text-cyan-400" title="Tailwindcss"/>
+                <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer">
+                    <SiTailwindcss className="text-7xl text-cyan-400" title="Tailwindcss"/>
+                </a>
             </motion.div>
             <motion.div
             variants={icon(5.5)}
             initial="initial"
             animate="animate" 
              className="rounded-2xl border-4 border-neutral-800 p-4">
-                <SiPrisma className="text-7xl text-[#0c344b]" title="PrismaJS"/>
+                <a href="https://www.prisma.io/" target="_blank" rel="noopener noreferrer">
+                    <SiPrisma className="text-7xl text-[#0c344b]" title="PrismaJS"/>
+                </a>
             </motion.div>
             <motion.div
             variants={icon(6)}
             initial="initial"
             animate="animate"  
             className="rounded-2xl border-4 border-neutral-800 p-4">
-                <SiNodedotjs className="text-7xl text-green-400" title="ExpressJS"/>
+                <a href="https://nodejs.org/" target="_blank" rel="noopener noreferrer">
+                    <SiNodedotjs className="text-7xl text-green-400" title="Nodejs"/>
+                </a>
             </motion.div>
             <motion.div
             variants={icon(6.5)}
             initial="initial"
             animate="animate" 
              className="rounded-2xl border-4 border-neutral-800 p-4">
-                <SiExpress className="text-7xl text-white" title="ExpressJS"/>
+                <a href="https://expressjs.com/" target="_blank" rel="noopener noreferrer">
+                    <SiExpress className="text-7xl text-white" title="ExpressJS"/>
+                </a>
             </motion.div>
         </motion.div>
     </div>
