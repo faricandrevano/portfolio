@@ -1,17 +1,11 @@
 import aboutPic from '../assets/about.jpg';
 import {ABOUT_TEXT} from '../constants';
 import { motion } from 'framer-motion';
-const container = (delay) => ({
-    hidden: {x: -100,opacity: 0},
-    visible: {
-        x: 0,
-        opacity: 1,
-        transition: {duration: 0.5,delay: delay}
-    }
-})
+import GithubCallender from './GithubCallender';
+
 function About() {
   return (
-    <div className="border-b border-neutral-900 pb-4">
+    <div className="border-b border-neutral-900 pb-8">
         <motion.h1
          initial={{opacity: 0, y: -100}}
          whileInView={{opacity: 1,y:0}}
@@ -39,6 +33,16 @@ function About() {
                     <p className='my-2 max-w-xl py-6'>{ABOUT_TEXT}</p>
                 </div> 
             </motion.div>    
+        </div>
+        <div className='flex flex-wrap justify-center'>
+            <motion.h1
+            initial={{opacity: 0,y: -100}}
+            whileInView={{opacity: 1, y: 0}}
+            transition={{duration: 1}} 
+            className='my-20 text-4xl'>Days I Code</motion.h1>
+            <motion.span > 
+                <GithubCallender/>
+            </motion.span>
         </div>
     </div>
   )
