@@ -27,13 +27,15 @@ function Experience() {
                         <motion.p
                         variants={animationContainer(true,index)}
                         whileInView="visible"
-                        initial="hidden" 
+                        initial="hidden"
+                        viewport={{once: true}}
                         className="mb-2 text-sm text-neutral-400">{el.year}</motion.p>
                     </div>
                     <motion.div
                     variants={animationContainer(false,index)}
                     initial="hidden"
-                    whileInView="visible" 
+                    whileInView="visible"
+                    viewport={{once: true}} 
                     className="w-full max-w-xl lg:w-3/4">
                         <h6 className="mb-2 font-semibold">{el.role} - <span className="text-sm text-purple-100">{el.company}</span></h6>
                         <p className="mb-4 text-neutral-400">{el.description}</p>

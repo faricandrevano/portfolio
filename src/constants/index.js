@@ -41,31 +41,39 @@ export const EXPERIENCES = [
 export const PROJECTS = [
   {
     title: "E-Commerce Website",
-    image: project1,
     description:
       "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
     technologies: ["HTML", "CSS", "React.js", "Node.js", "MongoDB"],
   },
   {
     title: "Task Management App",
-    image: project2,
     description:
       "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
     technologies: ["HTML", "CSS", "React.js", "Firebase"],
   },
   {
     title: "Portfolio Website",
-    image: project3,
     description:
       "A personal portfolio website showcasing projects, skills, and contact information.",
     technologies: ["HTML", "React.js", "Tailwindcss"],
   },
   {
     title: "Blogging Platform",
-    image: project4,
     description:
       "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
     technologies: ["HTML", "CSS", "React.js", "Express", "mySQL"],
+  },
+  {
+    title: "PPDB Website",
+    description:
+      "A platform for new student admission system",
+    technologies: ["Laravel", "Tailwindcss"],
+  },
+  {
+    title: "school website attendance",
+    description:
+      "A platform for record attendance for students at school.",
+    technologies: ["React.js", "TailwindCSS", "Express", "Prisma"],
   },
 ];
 

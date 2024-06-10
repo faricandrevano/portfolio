@@ -1,5 +1,7 @@
 import { PROJECTS } from "../constants";
 import { motion } from "framer-motion";
+import { useState,useEffect } from "react";
+import ProjectCard from "./ProjectCard";
 const ContainerVariants = (Leftcontainer,index) => ({
     from: {
         x: Leftcontainer? -100: 100,
@@ -9,40 +11,46 @@ const ContainerVariants = (Leftcontainer,index) => ({
         x: 0,
         opacity: 1,
         transition: {
-            duration: 0.5 + index
+            duration: 1,
         }
     }
 }) 
 function Projects() {
+    const [countProject,setCountProject] = useState(3)
+    const [items,setItems] = useState([]);
+    const showMoreItem = () => {
+        setCountProject(prevCount => prevCount + 3)
+    }
+    useEffect(() => {
+        setItems(PROJECTS.slice(0,countProject));
+    },[countProject])
   return (
     <div className="border-b border-neutral-900 pb-4">
-        <h1 className="my-20 text-center text-4xl">Projects</h1>
+        <motion.h1
+        initial={{y: -100,opacity: 0}}
+        whileInView={{y: 0,opacity:1}}
+        transition={{duration: 1}}
+        className="my-20 text-center text-4xl">Projects</motion.h1>
         <div>
-            {PROJECTS.map((el,index) => (
-                <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
-                    <div className="w-full lg:w-1/4">
-                        <motion.img
-                            variants={ContainerVariants(true,index)}
-                            initial="from"
-                            whileInView="to"
-                            src={el.image}
-                            alt={el.title}
-                            className="mb-6 rounded lg:w-44"
-                         />
-                    </div>
-                    <motion.div
-                    variants={ContainerVariants(false,index)}
-                    initial="from"
-                    whileInView="to" 
-                    className="w-full max-w-xl lg:w-3/4">
-                        <h6 className="mb-2 font-semibold">{el.title}</h6>
-                        <p className="mb-4 text-neutral-400">{el.description}</p>
-                        {el.technologies.map((tech,index) => (
-                            <span key={index} className="mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-800">{tech}</span>
-                        ))}
-                    </motion.div>
-                </div>
+            {items.map((el,index) => (
+                <motion.div
+                initial={{x: -100,opacity: 0}}
+                whileInView={{x: 0,opacity:1}}
+                transition={{duration: 1}}
+                viewport={{once: true}}
+                className="my-4" key={index}>
+                    <ProjectCard project={el}/>
+                </motion.div>
             ))}
+            {
+                countProject < PROJECTS.length && (
+                    <motion.button
+                    initial={{scale: 1}}
+                    whileHover={{scale: 1.1}}
+                    onClick={showMoreItem}
+                    className="block mx-auto text-white rounded-full bg-neutral-900 px-3 py-2 my-6 text-md">Show More</motion.button>
+                )
+            }
         </div>
     </div>
   )
