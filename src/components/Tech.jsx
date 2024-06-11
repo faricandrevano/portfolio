@@ -24,7 +24,7 @@ function Tech() {
         initial={{opacity: 0,x: -100}}
         whileInView={{opacity:1,x:0}}
         transition={{duration: 1.4}}
-         className="flex flex-wrap items-center justify-center gap-4 max-w-4xl mx-auto">
+         className="flex flex-wrap items-center justify-center gap-4 max-w-5xl mx-auto">
             <motion.div
             variants={icon(2.5)}
             initial="initial"

@@ -25,21 +25,42 @@ function GithubCallender() {
   return (
     <div className="overflow-x-auto">
         {
-            width < 768 ? <GitHubCalendar
+            width < 340 ? <GitHubCalendar
             username="faricandrevano"
             blockSize={6}
-           blockMargin={5}
+           blockMargin={3}
            color="#c084f5"
            fontSize={7}
            transformData={selectLastSixMonths}
-            />  
-            : <GitHubCalendar
+            /> : width < 440 ? <GitHubCalendar
             username="faricandrevano"
-            blockSize={16}
+            blockSize={6}
+           blockMargin={4}
+           color="#c084f5"
+           fontSize={11}
+           transformData={selectLastSixMonths}
+            /> :
+            width <= 768? <GitHubCalendar
+            username="faricandrevano"
+            blockSize={7}
+           blockMargin={5}
+           color="#c084f5"
+           fontSize={12}
+            />  
+            : width < 1024 ?
+            <GitHubCalendar
+            username="faricandrevano"
+            blockSize={8}
            blockMargin={5}
            color="#c084f5"
            fontSize={16}
-            /> 
+            /> :
+            <GitHubCalendar
+           username="faricandrevano"
+           blockSize={16}
+          blockMargin={5}
+          color="#c084f5"
+          fontSize={16} />
         }
     </div>
   )

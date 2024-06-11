@@ -34,7 +34,7 @@ function About() {
                 </div> 
             </motion.div>    
         </div>
-        <div className='flex flex-wrap justify-center'>
+        <div className='flex flex-wrap flex-col items-center'>
             <motion.h1
             initial={{opacity: 0,y: -100}}
             whileInView={{opacity: 1, y: 0}}
