@@ -9,25 +9,32 @@ export const ABOUT_TEXT = `With over 5 years of programming experience, I have d
 
 export const EXPERIENCES = [
   {
-    year: "2023 - Present",
+    year: "June 2024 - August 2024",
+    role: "Fullstack Flutter Developer",
+    company: "Sannber Foundation",
+    description: `Enhanced skills in cutting-edge technologies, including Flutter, Firebase, and UI design, to advance technical capabilities and application development.`,
+    technologies: ["Flutter", "Firebase"],
+  },
+  {
+    year: "November 2023 - June 2024",
     role: "Junior Programming Internship",
     company: "Agung Logistics.",
     description: `Led a team in developing and maintaining web applications using .NET, ASP.NET,and DEVEXPRESS. Implemented Tools Navicat and integrated with SQL SERVER databases. Collaborated with stakeholders to define project requirements and timelines.`,
     technologies: [".NET", "APS.NET", "DEVEXPRESS", "SQL SERVER"],
   },
   {
-    year: "2023 - 2024",
+    year: "January 2023 - April 2023",
+    role: "Front-end Developer Internship",
+    company: "INET MEDIA",
+    description: `Developed and maintained web applications using Laravel, Tailwindcss. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
+    technologies: ["Laravel", "Tailwindcss"],
+  },
+  {
+    year: "July 2023 - May 2024",
     role: "Mobile and Web Development Instructor",
     company: "SYNTAX COMMUNITY",
     description: `Teaching programming to community members and managing the SYNTAX COMMUNITY website with Laravel, React and Tailwindcss technology.`,
     technologies: ["LARAVEL", "REACTJS", "FLUTTER", "MYSQL"],
-  },
-  {
-    year: "2021 - 2022",
-    role: "On The Job Training",
-    company: "INET MEDIA",
-    description: `Developed and maintained web applications using Laravel, Tailwindcss. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-    technologies: ["Laravel", "Tailwindcss"],
   },
   // {
   //   year: "2020 - 2021",
@@ -65,20 +72,19 @@ export const PROJECTS = [
   },
   {
     title: "PPDB Website",
-    description:
-      "A platform for new student admission system",
+    description: "A platform for new student admission system",
     technologies: ["Laravel", "Tailwindcss"],
   },
   {
     title: "school website attendance",
-    description:
-      "A platform for record attendance for students at school.",
+    description: "A platform for record attendance for students at school.",
     technologies: ["React.js", "TailwindCSS", "Express", "Prisma"],
   },
 ];
 
 export const CONTACT = {
-  address: "Tambun Selatan, kecamatan Mangunjaya Perum Griya Persada Blok A3/22",
+  address:
+    "Tambun Selatan, kecamatan Mangunjaya Perum Griya Persada Blok A3/22",
   phoneNo: "+62 8977 267 557",
   email: "faric26andrevano@gmail.com",
 };
